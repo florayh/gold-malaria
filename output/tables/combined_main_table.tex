@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\centering
+\caption{Gold mining's effect on malaria incidence and mortality (2SLS-IV estimates)}
+\label{tab:main_results}
+\small
+\begin{tabular}{l*{4}{c}}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & Malaria & \textit{P.~falciparum} & Non-\textit{falciparum} & Malaria deaths \\
+ & API & API & API & per 1,000 \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel A: General population (municipality-level)}} \\[3pt]
+Gold mining area (km\textsuperscript{2}) & $0.447^{***}$ & $0.028$ & $0.419^{***}$ & $0.00004$ \\
+ & (0.117) & (0.024) & (0.116) & (0.00005) \\[3pt]
+Observations & 4,403 & 4,403 & 4,403 & 4,403 \\
+Mean of DV & 24.97 & 5.03 & 19.94 & 0.0033 \\
+First-stage F & 995.4 & 995.4 & 995.4 & 995.4 \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel B: Indigenous population (indigenous health subdistrict-level)}} \\[3pt]
+Gold mining area (km\textsuperscript{2}) & $0.515^{*}$ & $0.054$ & $0.461^{*}$ & --- \\
+ & (0.207) & (0.062) & (0.219) &  \\[3pt]
+Observations & 1,802 & 1,802 & 1,802 &  \\
+Mean of DV & 118.84 & 16.29 & 102.54 &  \\
+First-stage F & 390 & 390 & 390 &  \\
+\midrule
+\multicolumn{5}{l}{\textit{Panel C: Health expenditure heterogeneity (municipality-level)}} \\[3pt]
+Gold mining area (km\textsuperscript{2}) & $0.566^{***}$ & $0.293^{***}$ & $0.273^{***}$ & $-0.00022^{***}$ \\
+ & (0.081) & (0.022) & (0.061) & (0.00003) \\[3pt]
+Health exp.~$\times$ mining area & $-0.0010^{***}$ & $-0.0006^{***}$ & $-0.00037^{***}$ & $0.00000$ \\
+ & (0.00012) & (0.00003) & (0.00009) & (0.00000) \\[3pt]
+Observations & 3,686 & 3,686 & 3,686 & 3,686 \\
+First-stage F & 2780.1 & 2780.1 & 2780.1 & 2780.1 \\
+\midrule
+Unit \& year FE & Yes & Yes & Yes & Yes \\
+Covariates & Yes & Yes & Yes & Yes \\
+Clustered SE & Yes & Yes & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item \textit{Notes:} Each cell reports a 2SLS-IV coefficient where gold mining area (km\textsuperscript{2}) is instrumented by geological rock-type interactions with the rolling gold price. Panel~A estimates the effect on the general population at the municipality level (260 units, 2003--2019). Panel~B estimates the effect on indigenous populations at the indigenous health subdistrict level (106 units, 2003--2019); column~(4) is unavailable because indigenous-specific mortality data are not reported at this level. Panel~C adds an interaction between gold mining area and per-capita municipal health expenditure (R\$) to test whether health system capacity mitigates mining's effect. All specifications include unit and year fixed effects, covariates (suppressed), and standard errors clustered at the unit level. $^{+}p<0.1$; $^{*}p<0.05$; $^{**}p<0.01$; $^{***}p<0.001$.
+\end{tablenotes}
+\end{table}

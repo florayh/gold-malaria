@@ -1,0 +1,27 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Outcomes are hospitalizations per 1,000 population.},
+note{  }={Chr. Resp. = Chronic Respiratory; TB = Tuberculosis; Derm. = Dermatitis; STD = sexually transmitted diseases.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-10}{solid, black, 0.05em},
+hline{4}={1-10}{solid, black, 0.05em},
+hline{1}={1-10}{solid, black, 0.08em},
+hline{10}={1-10}{solid, black, 0.08em},
+column{2-10}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Chr. Resp. & Ulcer & TB & Derm. & Accidents & STD & Pneumonia & HIV & Diabetes \\
+Gold mining area & \num{0.001} & \num{0.000} & \num{0.001} & $-$0.000+ & \num{0.000} & \num{0.000} & \num{0.007} & \num{0.000}** & \num{0.002}** \\
+& (\num{0.001}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.000}) & (\num{0.006}) & (\num{0.000}) & (\num{0.001}) \\
+Num.Obs. & \num{4420} & \num{4420} & \num{4420} & \num{4420} & \num{4420} & \num{4420} & \num{4420} & \num{4420} & \num{4420} \\
+R2 & \num{0.522} & \num{0.369} & \num{0.219} & \num{0.278} & \num{0.096} & \num{0.212} & \num{0.504} & \num{0.527} & \num{0.531} \\
+First-stage F & 1020.885 & 1020.885 & 1020.885 & 1020.885 & 1020.885 & 1020.885 & 1020.885 & 1020.885 & 1020.885 \\
+FE: Mun & X & X & X & X & X & X & X & X & X \\
+FE: Year & X & X & X & X & X & X & X & X & X \\
+Std.Errors & Mun & Mun & Mun & Mun & Mun & Mun & Mun & Mun & Mun \\
+\end{talltblr}
+}

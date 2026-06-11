@@ -1,0 +1,40 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{18}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{25}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Malaria API & Falciparum API & Non-falciparum API & Deaths per 1000 \\
+Own gold mining (km²) & \num{0.306}*** & \num{0.008} & \num{0.299}*** & \num{0.00003} \\
+& (\num{0.083}) & (\num{0.028}) & (\num{0.070}) & (\num{0.00005}) \\
+Neighbor gold mining 0--200km (km²) & \num{0.353}* & \num{0.024} & \num{0.329}+ & \num{0.00012} \\
+& (\num{0.170}) & (\num{0.047}) & (\num{0.186}) & (\num{0.00010}) \\
+Forest area (km²) & \num{0.010} & \num{0.0019} & \num{0.008} & \num{0.00000}+ \\
+& (\num{0.007}) & (\num{0.0023}) & (\num{0.005}) & (\num{0.00000}) \\
+Agriculture area (km²) & \num{0.027} & \num{0.014}+ & \num{0.013} & \num{0.00000} \\
+& (\num{0.021}) & (\num{0.007}) & (\num{0.014}) & (\num{0.00000}) \\
+Population & \num{0.00007} & \num{0.00003} & \num{0.00004} & \num{0.00000} \\
+& (\num{0.00006}) & (\num{0.00002}) & (\num{0.00004}) & (\num{0.00000}) \\
+GDP per capita & \num{0.00022} & \num{0.00006} & \num{0.00016} & \num{0.00000} \\
+& (\num{0.00018}) & (\num{0.00005}) & (\num{0.00014}) & (\num{0.00000}) \\
+Mean temperature & \num{2.663} & \num{2.726} & \num{-0.063} & \num{0.0007} \\
+& (\num{14.112}) & (\num{3.717}) & (\num{11.329}) & (\num{0.0041}) \\
+Annual precipitation & \num{0.026}*** & \num{0.009}** & \num{0.017}** & \num{0.00000} \\
+& (\num{0.007}) & (\num{0.0028}) & (\num{0.006}) & (\num{0.00000}) \\
+Num.Obs. & \num{1462} & \num{1462} & \num{1462} & \num{1462} \\
+R2 & \num{0.555} & \num{0.430} & \num{0.580} & \num{0.198} \\
+First-stage F & 164.239 & 164.239 & 164.239 & 164.239 \\
+FE: Mun & X & X & X & X \\
+FE: Year & X & X & X & X \\
+Std.Errors & Mun & Mun & Mun & Mun \\
+Mean of DV & \num{32.500} & \num{6.960} & \num{25.540} & \num{0.0045} \\
+\end{talltblr}
+}

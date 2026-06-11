@@ -1,0 +1,3 @@
+panel,n_candidates,n_selected,instruments
+mu_spillover_own,428,4,pp3_delta_inc_2yrgp pp3_delta_inij_2yrgp pp3_delta_inj_2yrgp pp3_gamma_mlp_2yrgp
+mu_spillover_nb,409,4,pp3cc_nb0_200km_2yrgp pp3_delta_inc_nb0_200km_2yrgp pp3_delta_inij_nb0_200km_2yrgp pp3_delta_inj_nb0_200km_2yrgp

@@ -1,0 +1,36 @@
+{\small
+\begin{tabular}[t]{lrr}
+\toprule
+Specification & Coefficient & Std. Error\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Malaria API}}\\
+\hspace{1em}Naive OLS (no FE) & 0.060 & (0.111)\\
+\hspace{1em}Naive OLS + covariates & -0.097 & (0.087)\\
+\hspace{1em}OLS + FE & -0.043 & (0.076)\\
+\hspace{1em}OLS + FE + covariates & 0.022 & (0.063)\\
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Falciparum API}}\\
+\hspace{1em}Naive OLS (no FE) & 0.040 & (0.026)\\
+\hspace{1em}Naive OLS + covariates & 0.012 & (0.021)\\
+\hspace{1em}OLS + FE & -0.109 & (0.031)\\
+\hspace{1em}OLS + FE + covariates & -0.093 & (0.033)\\
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Non-falciparum API}}\\
+\hspace{1em}Naive OLS (no FE) & 0.020 & (0.085)\\
+\hspace{1em}Naive OLS + covariates & -0.109 & (0.067)\\
+\hspace{1em}OLS + FE & 0.066 & (0.075)\\
+\hspace{1em}OLS + FE + covariates & 0.115 & (0.063)\\
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Malaria death rate}}\\
+\hspace{1em}Naive OLS (no FE) & 0.000049 & (0.000014)\\
+\hspace{1em}Naive OLS + covariates & 0.000031 & (0.000013)\\
+\hspace{1em}OLS + FE & -0.000049 & (0.000041)\\
+\hspace{1em}OLS + FE + covariates & -0.000041 & (0.000038)\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item \textit{Note: } 
+\item Mean outcomes: Malaria API = 24.97; Falciparum API = 5.03; Non-falciparum API = 19.94; Malaria death rate = 0.0033. Standard errors clustered at municipality level in parentheses.
+\end{tablenotes}
+}

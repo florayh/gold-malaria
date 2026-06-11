@@ -1,0 +1,22 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{5}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{7}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Percent agriculture & Percent soy & Percent forest & Avg. temp. & Precip. \\
+(Intercept) & \num{0.731}*** & \num{0.442}* & \num{64.962}*** & \num{25.733}*** & \num{2018.825}*** \\
+Gabro Serra Comprida & \num{-0.010} & \num{-0.006} & \num{0.402} & \num{-0.006} & \num{1.585} \\
+Granito Pepita & \num{-0.004} & \num{-0.003} & \num{0.194} & \num{-0.002} & \num{2.555} \\
+Num.Obs. & \num{260} & \num{260} & \num{259} & \num{260} & \num{260} \\
+R2 & \num{0.000} & \num{0.000} & \num{0.013} & \num{0.003} & \num{0.005} \\
+\end{talltblr}
+}

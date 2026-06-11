@@ -1,0 +1,25 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{4}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{10}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Agriculture & Soy & Forest & Pasture & Avg. temp. & Precip. \\
+Ingarana x 2 yr gold price & \num{0.003}*** & \num{-0.000}** & \num{-0.004}*** & \num{0.004}*** & \num{0.000} & \num{0.001}*** \\
+Granito Pepita x 2 yr gold price & \num{-0.009}*** & \num{-0.000}** & \num{0.010}*** & \num{-0.009}*** & \num{0.000} & \num{-0.000}*** \\
+Num.Obs. & \num{1802} & \num{1802} & \num{1802} & \num{1802} & \num{1802} & \num{1802} \\
+R2 & \num{0.993} & \num{0.945} & \num{1.000} & \num{0.992} & \num{0.981} & \num{0.814} \\
+First-stage F & 18.545 & 0.494 & 24.137 & 22.148 & 5.834 & 1.993 \\
+FE: Subdist. & X & X & X & X & X & X \\
+FE: Year & X & X & X & X & X & X \\
+Std.Errors & Subdist. & Subdist. & Subdist. & Subdist. & Subdist. & Subdist. \\
+\end{talltblr}
+}

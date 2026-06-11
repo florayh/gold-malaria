@@ -1,0 +1,36 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{4}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{10}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Total IMR & Congenital IMR & Circulatory IMR & Endocrine IMR & External IMR \\
+Gold mining area (km²) & \num{0.027} & \num{0.0032} & \num{-0.021} & \num{0.035} & \num{0.110}** \\
+& (\num{0.071}) & (\num{0.008}) & (\num{0.021}) & (\num{0.046}) & (\num{0.035}) \\
+Num.Obs. & \num{1033} & \num{1033} & \num{1033} & \num{1033} & \num{1033} \\
+R2 & \num{0.659} & \num{0.140} & \num{0.113} & \num{0.278} & \num{0.763} \\
+First-stage F & 32.066 & 32.066 & 32.066 & 32.066 & 32.066 \\
+FE: Subdist. & X & X & X & X & X \\
+FE: Year & X & X & X & X & X \\
+Std.Errors & Subdist. & Subdist. & Subdist. & Subdist. & Subdist. \\
+\end{talltblr}
+\vspace{2pt}
+\begin{minipage}{\linewidth}
+\footnotesize
+\textit{Notes:} IMR = infant mortality rate.
+Congenital = ICD-10 chapter Q (congenital malformations).
+Circulatory = ICD-10 chapter I.
+Endocrine = ICD-10 chapter E (endocrine, nutritional, and metabolic diseases).
+External = ICD-10 chapters V--Y (external causes of morbidity and mortality).
+Mortality outcomes (IMR, Congenital, Circulatory, Endocrine, External) are per 1,000 live births.
+Observations with fewer than 5 live births (for mortality and stillborn outcomes) are excluded.
+\end{minipage}
+}

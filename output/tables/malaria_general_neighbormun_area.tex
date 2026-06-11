@@ -1,0 +1,40 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{3}={1-9}{solid, black, 0.05em},
+hline{17}={1-9}{solid, black, 0.05em},
+hline{1}={1-9}{solid, black, 0.08em},
+hline{24}={1-9}{solid, black, 0.08em},
+column{2-9}={}{halign=c},
+column{1}={}{halign=l},
+hline{2}={1-9}{solid, black, 0.05em},
+}                     %% tabularray inner close
+ & \SetCell[c=2]{c} Malaria API &  & \SetCell[c=2]{c} Falciparum API &  & \SetCell[c=2]{c} Non-falc. API &  & \SetCell[c=2]{c} N deaths from malaria &   \\
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)  \\
+Gold mining area (km²) & \num{0.319}** & \num{0.447}*** & \num{-0.0047} & \num{0.028} & \num{0.324}** & \num{0.419}*** & \num{0.00003} & \num{0.00004} \\
+& (\num{0.104}) & (\num{0.117}) & (\num{0.016}) & (\num{0.024}) & (\num{0.112}) & (\num{0.116}) & (\num{0.00006}) & (\num{0.00005}) \\
+Forest area (km²) &  & \num{0.027}* &  & \num{0.007}* &  & \num{0.020}* &  & \num{0.00000}* \\
+&  & (\num{0.011}) &  & (\num{0.0031}) &  & (\num{0.008}) &  & (\num{0.00000}) \\
+Agriculture area (km²) &  & \num{0.042}*** &  & \num{0.013}*** &  & \num{0.028}** &  & \num{0.00000}+ \\
+&  & (\num{0.012}) &  & (\num{0.0032}) &  & (\num{0.009}) &  & (\num{0.00000}) \\
+Population &  & \num{0.00002} &  & \num{0.00002} &  & \num{0.00000} &  & \num{-0.00000} \\
+&  & (\num{0.00004}) &  & (\num{0.00001}) &  & (\num{0.00003}) &  & (\num{0.00000}) \\
+GDP per capita &  & \num{0.00015} &  & \num{0.00002} &  & \num{0.00013}+ &  & \num{0.00000} \\
+&  & (\num{0.00010}) &  & (\num{0.00003}) &  & (\num{0.00008}) &  & (\num{0.00000}) \\
+Mean temperature &  & \num{0.498} &  & \num{0.916} &  & \num{-0.418} &  & \num{0.0038}* \\
+&  & (\num{5.967}) &  & (\num{1.534}) &  & (\num{4.678}) &  & (\num{0.0018}) \\
+Annual precipitation &  & \num{0.022}*** &  & \num{0.007}*** &  & \num{0.015}*** &  & \num{0.00000}+ \\
+&  & (\num{0.005}) &  & (\num{0.0016}) &  & (\num{0.0041}) &  & (\num{0.00000}) \\
+Num.Obs. & \num{4420} & \num{4403} & \num{4420} & \num{4403} & \num{4420} & \num{4403} & \num{4420} & \num{4403} \\
+R2 & \num{0.540} & \num{0.558} & \num{0.397} & \num{0.417} & \num{0.568} & \num{0.583} & \num{0.139} & \num{0.145} \\
+First-stage F & 1020.885 & 995.404 & 1020.885 & 995.404 & 1020.885 & 995.404 & 1020.885 & 995.404 \\
+FE: Mun & X & X & X & X & X & X & X & X \\
+FE: Year & X & X & X & X & X & X & X & X \\
+Std.Errors & Mun & Mun & Mun & Mun & Mun & Mun & Mun & Mun \\
+Mean of DV & \num{24.970} & \num{24.970} & \num{5.030} & \num{5.030} & \num{19.940} & \num{19.940} & \num{0.0033} & \num{0.0033} \\
+\end{talltblr}
+}

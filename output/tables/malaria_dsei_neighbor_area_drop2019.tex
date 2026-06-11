@@ -1,0 +1,36 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{3}={1-7}{solid, black, 0.05em},
+hline{13}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{20}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+hline{2}={1-7}{solid, black, 0.05em},
+}                     %% tabularray inner close
+ & \SetCell[c=2]{c} Malaria API &  & \SetCell[c=2]{c} Falciparum API &  & \SetCell[c=2]{c} Non-falc. API &   \\
+ & (1) & (2) & (3) & (4) & (5) & (6)  \\
+Gold mining area (km²) & \num{0.391}** & \num{0.570}* & \num{0.109}* & \num{0.083}+ & \num{0.282}+ & \num{0.487}* \\
+& (\num{0.145}) & (\num{0.219}) & (\num{0.053}) & (\num{0.047}) & (\num{0.168}) & (\num{0.228}) \\
+Population &  & \num{-0.029}+ &  & \num{-0.005} &  & \num{-0.025}+ \\
+&  & (\num{0.017}) &  & (\num{0.005}) &  & (\num{0.014}) \\
+Mean temperature &  & \num{-35.482} &  & \num{-5.149} &  & \num{-30.333} \\
+&  & (\num{25.205}) &  & (\num{5.727}) &  & (\num{22.708}) \\
+Annual precipitation &  & \num{-0.018} &  & \num{0.010} &  & \num{-0.028}+ \\
+&  & (\num{0.018}) &  & (\num{0.009}) &  & (\num{0.016}) \\
+Forest area (km²) &  & \num{0.006} &  & \num{-0.003} &  & \num{0.008} \\
+&  & (\num{0.015}) &  & (\num{0.003}) &  & (\num{0.014}) \\
+Num.Obs. & \num{1696} & \num{1696} & \num{1696} & \num{1696} & \num{1696} & \num{1696} \\
+R2 & \num{0.582} & \num{0.583} & \num{0.241} & \num{0.243} & \num{0.561} & \num{0.563} \\
+First-stage F & 386.214 & 353.660 & 386.214 & 353.660 & 386.214 & 353.660 \\
+FE: Subdist. & X & X & X & X & X & X \\
+FE: Year & X & X & X & X & X & X \\
+Std.Errors & Subdist. & Subdist. & Subdist. & Subdist. & Subdist. & Subdist. \\
+Mean of DV & \num{110.010} & \num{110.010} & \num{15.860} & \num{15.860} & \num{94.150} & \num{94.150} \\
+\end{talltblr}
+}

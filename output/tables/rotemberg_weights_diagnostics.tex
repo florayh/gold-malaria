@@ -1,0 +1,43 @@
+{\small
+\begin{center}
+\textbf{Panel A: Summary statistics}\\[0.5em]
+\begin{tabular}{lc}
+\toprule
+Number of year-instrument pairs & 34 \\
+Negative weights (share of pairs) & 22 / 34 (65\%) \\
+Sum of positive $\hat{\alpha}_k$ & 2.387 \\
+Sum of negative $\hat{\alpha}_k$ & -1.387 \\
+Overall IV estimate ($\hat{\beta}_{IV}$) & -0.566 \\
+Share from Gabro Serra Comprida $\times$ gold price & 0.620 \\
+Share from Granito Pepita $\times$ gold price & 0.380 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+\begin{center}
+\textbf{Panel B: Top 10 year-instrument pairs by $|\hat{\alpha}_k|$}\\[0.5em]
+\begin{tabular}{clccc}
+\toprule
+Year & Instrument & Gold price (\$/oz) & $\hat{\alpha}_k$ & $\hat{\beta}_k$ \\
+\midrule
+2011 & Gabro Serra Comprida $\times$ gold price & 1401 & 0.595 & -0.099 \\
+2010 & Granito Pepita $\times$ gold price & 1101 & 0.397 & -0.168 \\
+2010 & Gabro Serra Comprida $\times$ gold price & 1101 & 0.326 & -0.231 \\
+2019 & Granito Pepita $\times$ gold price & 1334 & 0.275 & 2.108 \\
+2009 & Granito Pepita $\times$ gold price & 924 & 0.205 & -0.294 \\
+2019 & Gabro Serra Comprida $\times$ gold price & 1334 & 0.203 & -2.248 \\
+2009 & Gabro Serra Comprida $\times$ gold price & 924 & 0.132 & -0.381 \\
+2018 & Granito Pepita $\times$ gold price & 1266 & 0.121 & -2.846 \\
+2013 & Granito Pepita $\times$ gold price & 1544 & -0.091 & 5.610 \\
+2006 & Gabro Serra Comprida $\times$ gold price & 526 & -0.087 & 0.131 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\begin{center}
+\textit{Notes:} Rotemberg weights ($\hat{\alpha}_k$) decompose the overall Bartik IV estimate into contributions from each year-instrument pair, following Goldsmith-Pinkham, Sorkin, and Swift (2020). The overall IV estimate equals $\hat{\beta}_{IV} = \sum_k \hat{\alpha}_k \hat{\beta}_k$, where $\hat{\beta}_k$ is the just-identified IV estimate using only instrument $k$. Instruments are geological rock types (area in km\textsuperscript{2}) interacted with the 2-year rolling average gold price. Municipality and year fixed effects are partialled out via the Frisch--Waugh--Lovell theorem.
+\end{center}
+}

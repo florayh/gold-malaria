@@ -1,0 +1,38 @@
+{\small
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{16}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{23}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Malaria API & Falciparum API & Non-falciparum API & N deaths from malaria \\
+Gold mining area (km²) & \num{0.252}** & \num{-0.018} & \num{0.270}** & \num{0.00002} \\
+& (\num{0.094}) & (\num{0.023}) & (\num{0.098}) & (\num{0.00005}) \\
+Forest area (km²) & \num{0.015}+ & \num{0.0034} & \num{0.012}* & \num{0.00000} \\
+& (\num{0.008}) & (\num{0.0022}) & (\num{0.006}) & (\num{0.00000}) \\
+Agriculture area (km²) & \num{0.022}* & \num{0.009}*** & \num{0.013}+ & \num{0.00000} \\
+& (\num{0.009}) & (\num{0.0026}) & (\num{0.007}) & (\num{0.00000}) \\
+Population & \num{-0.00002} & \num{0.00001} & \num{-0.00003} & \num{-0.00000} \\
+& (\num{0.00003}) & (\num{0.00001}) & (\num{0.00002}) & (\num{0.00000}) \\
+GDP per capita & \num{0.00007} & \num{0.00002} & \num{0.00005} & \num{0.00000} \\
+& (\num{0.00008}) & (\num{0.00002}) & (\num{0.00006}) & (\num{0.00000}) \\
+Mean temperature & \num{22.902}* & \num{8.670}* & \num{14.232}+ & \num{0.006}* \\
+& (\num{10.718}) & (\num{3.627}) & (\num{7.347}) & (\num{0.0024}) \\
+Annual precipitation & \num{0.014}** & \num{0.0049}* & \num{0.009}* & \num{0.00000}+ \\
+& (\num{0.005}) & (\num{0.0019}) & (\num{0.0038}) & (\num{0.00000}) \\
+Num.Obs. & \num{3298} & \num{3298} & \num{3298} & \num{3298} \\
+R2 & \num{0.600} & \num{0.442} & \num{0.632} & \num{0.155} \\
+First-stage F & 736.879 & 736.879 & 736.879 & 736.879 \\
+FE: Mun & X & X & X & X \\
+FE: Year & X & X & X & X \\
+Std.Errors & Mun & Mun & Mun & Mun \\
+Mean of DV & \num{30.130} & \num{6.400} & \num{23.740} & \num{0.0041} \\
+\end{talltblr}
+}
