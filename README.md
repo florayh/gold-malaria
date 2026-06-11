@@ -1,6 +1,4 @@
-# Reproduction Package
-
-**Paper:** "Gold mining increases malaria burden in the Brazilian Amazon"
+# Reproduction Package for "Gold mining increases malaria burden in the Brazilian Amazon"
 
 ---
 
